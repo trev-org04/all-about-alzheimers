@@ -1,0 +1,253 @@
+@font-face {
+    font-family: "Black";
+    src: url("./PROXIMA\ NOVA\ BLACK.ttf");
+}
+@font-face {
+    font-family: "Bold";
+    src: url("./PROXIMA\ NOVA\ BOLD.ttf");
+}
+@font-face {
+    font-family: "Semi-Bold";
+    src: url("/PROXIMA NOVA SEMIBOLD.ttf");
+}
+@font-face {
+    font-family: "Sans-Latin";
+    src: url("/HM SANS LATIN REGULAR.ttf");
+}
+:root {
+    --background: #4B0E65;
+    --font: #FFF7D2;
+    --light-purple: #E1CEE8;
+    --dark-purple: #703E8C;
+    --purple: #A185AE;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #4B0E65;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--purple); 
+    border-radius: 5px;
+    transition: 0.2s ease-in-out all;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--light-purple); 
+}
+html {
+    padding: 20px;
+    color: var(--font);
+    font-family: "Semi-Bold";
+    background-color: var(--background);
+}
+.header  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    margin-bottom: 2em;
+}
+.content-title  {
+    font-family: "Black";
+    font-size: 25px;
+    margin-bottom: 10px;
+    display: flex;
+}
+.content-text  {
+    font-size: 17px;
+    text-align: center;
+    display: flex;
+    margin-bottom: 2em;
+}
+.home-content-text  {
+    font-size: 17px;
+    text-align: left;
+    display: flex;
+    margin-bottom: 1em;
+}
+.home-image  {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    margin-bottom: 4em;
+    border-radius: 25px;
+}
+.link  {
+    color: var(--font);
+}
+.link:visited  {
+    color: var(--light-purple);
+}
+.menu  {
+    font-size: 30px;
+}
+.title  {
+    font-family: "Black";
+    font-size: 25px;
+    color: var(--font);
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--background);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--font);
+    display: block;
+    transition: 0.3s;
+    font-family: "Bold";
+}
+.sidenav a:hover {
+    color: var(--light-purple);
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.content-title  {
+    font-family: "Black";
+    font-size: 25px;
+}
+.card-title  {
+    font-size: 25px;
+    font-family: "Black";
+    margin-bottom: 10px;
+}
+.card-text  {
+    font-size: 18px;
+}
+.card  {
+    transition: 0.2s all ease-in-out;
+}
+.card:hover  {
+    transform: translateY(-10px);
+}
+.card-content  {
+    overflow: auto;
+    white-space: nowrap;
+    padding: 50px 0px 5px 0px;
+    transition: 0.3s;
+}
+.about-content, .resources-content  {
+    display: flex;
+    flex-direction: row;
+    margin: 3em 0em;
+    justify-content: space-between;
+}
+.resources-content  {
+    display: flex;
+    flex-direction: column;
+    margin: 3em 0em;
+}
+.subcontent-title  {
+    font-family: "Black";
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+ul  {
+    margin-top: 0px;
+}
+li  {
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+.about-card  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+.sheryl  {
+    width: 35%;     
+    border-radius: 250px;
+    margin-bottom: 2em;
+}
+.joanna  {
+    width: 35%;
+    border-radius: 250px;
+    margin-bottom: 2em;
+}
+.card-text  {
+    text-align: center;
+}
+.questionnaire  {
+    width: 25%;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+.pamphlet  {
+    width: 26.5%;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+.tourney  {
+    width: 32%;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+.infographic  {
+    width: 31%;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+.slides  {
+    width: 20.5%;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+.insta  {
+    width: 22.5%;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+.tiktok  {
+    width: 22.5%;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+.certification  {
+    width: 27%;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 480px) {
+    .title  {
+        font-size: 20px;
+    }
+    .about-content  {
+        flex-direction: column;
+        align-items: center;  
+        grid-gap: 4em; 
+    }
+    .about-title  {
+        text-align: center;
+    }
+    .about-card  {
+        width: 100%;
+    }
+    .card-content  {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 3em;
+    }
+    .questionnaire, .pamphlet, .tourney, .infographic, .insta, .tiktok, .slides, .certification  {
+        width: 100%;
+        margin-right: 0px;
+    }
+}
